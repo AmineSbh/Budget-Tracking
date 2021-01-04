@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingsActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/budgetactuel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Budget max actuel : "
+                android:textColor="#FF0000"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Nouveau budget max : "
+                android:textColor="#FF0000"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/newbudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nouveau budget max"
+                android:inputType="numberDecimal"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/maj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="maj"
+                android:layout_margin="70dp"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_weight="1"
+                android:text="mettre a jour" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/menu"
+                android:onClick="menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="menu" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
